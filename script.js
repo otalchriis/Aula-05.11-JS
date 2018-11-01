@@ -1,27 +1,29 @@
-// let nomeDoUsuario = "Christian Oliveira Santos";
-// console.log("Hello World!")
-// // alert("Hello World!")
+let texto = "Texto";
+let number = 1;
+let booleano = true;
 
-// let soma = 1+1;
-// let nome = "Christian O. Santos";
-// let vivo = false;
-// let idade = 25;
 
-// // let saida1 = "Olá " + nome + "! Tudo bem com voce?";
-// let saida1 = `Olá ${nome}! você tem ${idade} anos`;
+let nome = prompt ("Qual seu nome?");
+let valor = prompt("Qual o valor do seu emprestimo?");
 
-// console.log(saida1);
+alert(`Olá ${nome}!`)
+alert(`Você gostaria de emprestar o R$${valor}, certo?`)
 
-// console.log(prompt("qual seu nome?"));
-// console.log(idade)
-// vivo = confirm("Voce está Vivo")
-// console.log(`Você está vivo? ${vivo}`)
+let pretendePagar = confirm("Você pretende pagar o seu empréstimo?");
 
-// RECEBA 2 VALORES DO USUÁRIO E RETORNE UM ALERT COM O RESULTADO DA SOMA
+alert("Ok! Obrigado por nos visitar.")
 
-// console.log(`Você está vivo? ${vivo}`)
+let joaozinho = {
+    nome:"João",
+    idade:18,
+    namorada: undefined,
+};
 
-let idade = Number(prompt("Digite sua idade"));
-let idade2 = Number(prompt("Digite sua idade2"));
+let mariazinha = {
+    nome: "Maria",
+    idade: 17,
+    namorado: joaozinho,
 
-alert(idade + idade2);
+};
+
+joaozinho.namorada = mariazinha;
