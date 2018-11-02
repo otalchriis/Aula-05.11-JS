@@ -1,29 +1,19 @@
-let texto = "Texto";
-let number = 1;
-let booleano = true;
+// console.log("iniciou o script");
 
+let nota = Number(prompt("Qual é a sua nota?"));
 
-let nome = prompt ("Qual seu nome?");
-let valor = prompt("Qual o valor do seu emprestimo?");
+let entregouTudo = confirm("O aluno entregou todos os trabalhos?");
 
-alert(`Olá ${nome}!`)
-alert(`Você gostaria de emprestar o R$${valor}, certo?`)
+if (nota >= 6 && entregouTudo) {
+    alert("Parabéns, você foi aprovado!");
+}
 
-let pretendePagar = confirm("Você pretende pagar o seu empréstimo?");
+else if (nota >=6 && !entregouTudo);x
 
-alert("Ok! Obrigado por nos visitar.")
+else if (nota >= 5.5 && entregouTudo){
+    alert ("Você foi aprovado, mas agradeça o computador!")
+}
 
-let joaozinho = {
-    nome:"João",
-    idade:18,
-    namorada: undefined,
-};
-
-let mariazinha = {
-    nome: "Maria",
-    idade: 17,
-    namorado: joaozinho,
-
-};
-
-joaozinho.namorada = mariazinha;
+else {
+    alert ("Que pena, você foi reprovado!")
+}
