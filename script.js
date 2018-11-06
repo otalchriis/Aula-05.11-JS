@@ -1,19 +1,22 @@
-// console.log("iniciou o script");
+let passo = 0;
+let valor = 0;
 
-let nota = Number(prompt("Qual é a sua nota?"));
+while (passo <=10 ) {
+    console.log(passo);
 
-let entregouTudo = confirm("O aluno entregou todos os trabalhos?");
-
-if (nota >= 6 && entregouTudo) {
-    alert("Parabéns, você foi aprovado!");
+    passo = passo + 1
+    //passo +=1; 
+    //passo ++
 }
 
-else if (nota >=6 && !entregouTudo);x
+// let nomes = ["Felipe", "Renan","Bruno", "Giselle", "Camila", "Eric"];
 
-else if (nota >= 5.5 && entregouTudo){
-    alert ("Você foi aprovado, mas agradeça o computador!")
-}
+// for(let nome of nomes) {
+//     console.log (nome);
 
-else {
-    alert ("Que pena, você foi reprovado!")
-}
+//     nome += " top";
+
+//     console.log (nome);
+
+// };
+
